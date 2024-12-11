@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnes y Brasas</title>
+    <link rel="stylesheet" href="css/estiloCarta.css">
+    <link rel="shortcut icon" href="img/Carnes y Brasas.png" type="image/x-png">
+
+</head>
+
+<body>
+    <header>
+        <h1>Platos a la Carta</h1>
+    </header>
+
+    <nav>
+        <a href="Home(Index).html">Inicio</a>
+        <a href="Registro.html">Registro</a>
+        <a href="Carta.html">Carta</a>
+        <a href="Reservación.html">Reservación</a>
+        <a href="Acerca de.html">Acerca de</a>
+        <a href="Galeria.html">Galeria</a>
+        <a href="Contactanos.html">Contáctanos</a>
+    </nav>
+    <center>
+        <div class="category-bar">
+            <button onclick="showCategory('carta')">Carta</button>
+            <button onclick="showCategory('entrada')">Entrada</button>
+            <button onclick="showCategory('bebidas')">Bebidas</button>
+            <button onclick="showCategory('especialidades')">Especialidades</button>
+        </div>
+
+        <!-- Contenedor del Menú -->
+        <section class="menu-section">
+            <!-- Carta -->
+            <div class="menu-category" id="carta">
+                <div class="menu-item">
+                    <img src="img/Carta/Carne a la parrilla (1).png" alt="Carne a la Parrilla">
+                    <div class="menu-info">
+                        <h3>Carne a la Parrilla</h3>
+                        <p>Deliciosa carne cocida al punto perfecto.</p>
+                        <span class="price">S/ 50.00</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="img/Carta/Pollo a la parrilla (1).png" alt="Pollo a la Brasa">
+                    <div class="menu-info">
+                        <h3>Pollo a la Parrilla</h3>
+                        <p>Pollo jugoso y bien sazonado.</p>
+                        <span class="price">S/ 35.00</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="img/Carta/Chancho cilindro 1.1.png" alt="Chancho al cilindro">
+                    <div class="menu-info">
+                        <h3>Chancho al cilindro</h3>
+                        <p>Chachon bien crocante, jugoso y bien sazonado, cocido a su punto.</p>
+                        <span class="price">S/ 45.00</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="img/Carta/Costillas 1.1.png" alt="Costillas BBQ">
+                    <div class="menu-info">
+                        <h3>Costillas BBQ</h3>
+                        <p>Chancho jugoso y bien sazonado, un saber agridulce.</p>
+                        <span class="price">S/ 60.00</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="img/Carta/Chancho 1.1.png" alt="Chancho a la parrilla">
+                    <div class="menu-info">
+                        <h3>Chancho a la parrilla</h3>
+                        <p>Chancho jugoso y bien sazonado.</p>
+                        <span class="price">S/ 50.00</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="img/Carta/Alitas 1.1.png" alt="alitas BBQ">
+                    <div class="menu-info">
+                        <h3>alitas BBQ</h3>
+                        <p>Alitas jugosas y bien sazonadas.</p>
+                        <span class="price">S/ 45.00</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Entrada -->
+            <div class="menu-category" id="entrada" style="display: none;">
+                <div class="menu-item">
+                    <img src="img/Carta/Ensalada.jpeg" alt="Ensalada">
+                    <div class="menu-info">
+                        <h3>Ensalada Fresca</h3>
+                        <p>Una ensalada ligera y saludable.</p>
+                        <span class="price">S/ 16.00</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="img/Carta/souffle de espinaca.jpg" alt="soufflé">
+                    <div class="menu-info">
+                        <h3>soufflé de Espinaca</h3>
+                        <p>Caliente y muy esponjoso.</p>
+                        <span class="price">S/ 22.00</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="img/Carta/Croquetas de carne 1.1.png" alt="Croquetas de carne">
+                    <div class="menu-info">
+                        <h3>Croquetas de carne</h3>
+                        <p>Con un gran sabor unico.</p>
+                        <span class="price">S/ 28.00</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bebidas -->
+            <div class="menu-category" id="bebidas" style="display: none;">
+                <div class="menu-item">
+                    <img src="img/Carta/limonada frozen (1).png" alt="Limonada">
+                    <div class="menu-info">
+                        <h3>Limonada Frozen</h3>
+                        <p>Perfecta para acompañar cualquier comida.</p>
+                        <span class="price">S/ 16.00</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="img/Carta/Copa de vino Tinto (1).png" alt="Copa de Vino">
+                    <div class="menu-info">
+                        <h3>Copa de Vino Tinto</h3>
+                        <p>Vino de alta calidad.</p>
+                        <span class="price">S/ 32.00</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="img/Carta/Cuba libre 1.1.png" alt="Cuba libre">
+                    <div class="menu-info">
+                        <h3>Cuba libre</h3>
+                        <p>Elaborado en base a ron de alta calidad.</p>
+                        <span class="price">S/ 36.00</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="img/Carta/Fresa Frozen 1.1.png" alt="Freza Frozen">
+                    <div class="menu-info">
+                        <h3>Freza Frozen</h3>
+                        <p>Hecho con fresas de alta calidad.</p>
+                        <span class="price">S/ 26.00</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="img/Carta/Bebida de durazno 1.1.png" alt="Bebida de durazno">
+                    <div class="menu-info">
+                        <h3>Bebida de durazno</h3>
+                        <p>Hecho con duraznos de alta calidad.</p>
+                        <span class="price">S/ 20.00</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="img/Carta/Jugo de arandanos 1.1.png" alt="Jugo de arandanos">
+                    <div class="menu-info">
+                        <h3>Jugo de arandanos</h3>
+                        <p>Un jugo muy resprescante.</p>
+                        <span class="price">S/ 30.00</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Especialidades -->
+            <div class="menu-category" id="especialidades" style="display: none;">
+                <div class="menu-item">
+                    <img src="img/Carta/Parrilla mixta.jpg" alt="Parrilla Mixta">
+                    <div class="menu-info">
+                        <h3>Parrilla Mixta</h3>
+                        <p>Un mix de carnes, en una deliciosa parrilla.</p>
+                        <span class="price">S/ 70.00</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="img/Carta/Anticuchos.jpg" alt="Anticuchos">
+                    <div class="menu-info">
+                        <h3>Anticuchos</h3>
+                        <p>Tradicionales y llenos de sabor.</p>
+                        <span class="price">S/ 25.00</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="img/Carta/Anticuchos.jpg" alt="Tomahawk A5 a la Parilla">
+                    <div class="menu-info">
+                        <h3>Tomahawk A5 a la Parrilla</h3>
+                        <p>Con un saber innovador.</p>
+                        <span class="price">S/ 320.00</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </center>
+
+    <footer>
+        <div class="footerContenedor">
+            <div class="contactInfo">
+                <h3>Contáctanos</h3>
+                <ul>
+                    <li><strong>Teléfono:</strong> 01 546 7652</li>
+                    <li><strong>Celular:</strong> +51 657 972 231</li>
+                    <li><strong>Correo:</strong> <a href="">Carnes.y.Brasas@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="footerLinks">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="socialLinks">
+                <h3>Síguenos</h3>
+                <ul>
+                    <li><strong>Facebook:</strong> <a
+                            href="https://www.facebook.com/carnesybrasas/">Carnes.y.Brasas@hotmail.com</a></li>
+                    <li><strong>Instagram:</strong> <a
+                            href="https://www.instagram.com/carnes_y_brasas/">Carnes.y.Brasas@hotmail.com</a></li>
+                </ul>
+            </div>
+            <div class="contactInfo">
+                <h3>Registrate</h3>
+                <ul>
+                    <li><strong><a href="Registro.html">Registrate y ten descuentos especiales, presione
+                                aqui</a></strong></li>
+                </ul>
+            </div>
+
+        </div>
+        <p>&copy; 2024 Carnes y Brasas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/carta.js"></script>
+</body>
+
+</html>

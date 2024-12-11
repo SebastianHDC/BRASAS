@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 16px;
+
+}
+
+nav {
+    background-color: #555;
+    overflow: hidden;
+
+}
+
+a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    background-color: #111;
+}
+
+
+
+/* Barra de categorías */
+.category-bar {
+    display: flex;
+    justify-content: center;
+    background-color: #ffebce;
+    padding: 10px;
+    width: 100%;
+}
+
+.category-bar button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #776447;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.category-bar button:hover {
+    background-color: #2b2115;
+}
+
+
+/* Sección de menú */
+.menu-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.menu-category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 1200px;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+}
+
+.menu-item {
+    position: relative;
+    width: 340px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.menu-item img {
+    width: 340px;
+    height: 240px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover img {
+    transform: scale(1.1);
+}
+
+.menu-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transition: bottom 0.3s ease;
+    opacity: 0; /* Oculta la información */
+}
+
+.menu-item:hover .menu-info {
+    bottom: 10px;
+    opacity: 1;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footerContenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.contactInfo, .footerLinks, .socialLinks {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+    text-align: left;
+}
+h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #cf3726;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+
+body{
+    background-image: url(../img/beef.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/*Aqui empieza el responsivo*/
+
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+    /* Ajustes para navegación */
+    nav a {
+        float: none; /* Cambiado para que los enlaces ocupen todo el ancho */
+        display: block;
+        text-align: center;
+    }
+
+    /* Ajustes en footer */
+    .footerContenedor {
+        flex-direction: column; /* Cambiado para apilar los elementos verticalmente */
+        align-items: center;
+    }
+
+    .contactInfo, .footerLinks, .socialLinks {
+        width: 100%; /* Cambiado para que ocupen el 100% del ancho */
+        text-align: center;
+    }
+
+    /* Ajustes para contact-info */
+    .contact-info {
+        flex-direction: column; /* Cambiado para apilar elementos verticalmente */
+        gap: 10px;
+    }
+
+    .info-item {
+        width: 100%;
+    }
+}
+
+/* celulares */
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 18px; /* Cambiado para reducir el tamaño del texto */
+        text-align: center;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 14px; /* Cambiado para reducir el tamaño del texto */
+    }
+
+    .footerContenedor {
+        flex-direction: column; /* Cambiado para apilar verticalmente */
+        gap: 10px;
+    }
+
+    .form {
+        padding: 10px; /* Añadido para ajustar espacio en formularios */
+    }
+    
+    .contact-info {
+        flex-direction: column; /* Los elementos se apilan verticalmente */
+        text-align: center;
+    }
+
+    a {
+        font-size: 14px; /* Reduce ligeramente el tamaño del texto */
+    }
+
+    .category-bar {
+        font-size: 14px;
+    }
+
+    .category-bar button{
+        font-size: 14px;
+        margin: 0 10px;
+        padding: 2px 2px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

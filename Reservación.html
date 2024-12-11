@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnes y Brasas</title>
+    <link rel="stylesheet" href="css/estiloReser.css">
+    <link rel="shortcut icon" href="img/Carnes y Brasas.png" type="image/x-png">
+
+</head>
+<body>
+    <header>
+        <h1>Formulario de Reservación</h1>
+    </header>
+
+    <nav>
+        <a href="Home(Index).html">Inicio</a>
+        <a href="Registro.html">Registro</a>
+        <a href="Carta.html">Carta</a>
+        <a href="Reservación.html">Reservación</a>
+        <a href="Acerca de.html">Acerca de</a>
+        <a href="Galeria.html">Galeria</a>
+        <a href="Contactanos.html">Contáctanos</a>
+    </nav>
+
+    <center>
+        <form action="Reservación confirmada.html" method="post" enctype="multipart/form-data">
+            <p>
+                Cliente:
+                <input type="text" name="Nombres" id="Nombres">
+            </p>
+
+            <p>
+                Dni:
+                <input type="password" name="password" id="password">
+            </p>
+
+            <p>
+                Fecha para reservación:
+                <input type="date" name="fecnac" id="fecnac">
+            </p>
+            
+            <p>
+                Numero de personas:
+                <input type="number" name="personas" id="personas">
+            </p>
+
+            <p>
+                Telefono:
+                <input type="tel" name="telefono" id="telefono">
+            </p>
+
+            <p>
+                Correo:
+                <input type="mail" name="email" id="email" readonly>
+            </p>
+
+            <p>
+                ¿Aceptas todos los terminos y condiciones de esta Reservación?
+                <input type="checkbox" name="terminos-condiciones" id="terminos-condiciones" value="si"
+                    checked="checked"><br>
+
+                ¿Aceptas recibir notificaciones a tu correo?
+                <input type="checkbox" name="notificaciones" id="notificaciones" value="si" checked="checked"><br>
+            </p>
+            <p>
+                <button type="submit">Enviar Reservación</button>
+            </p>
+        </form>
+    </center>
+
+    <footer>
+        <div class="footerContenedor">
+            <div class="contactInfo">
+                <h3>Contáctanos</h3>
+                <ul>
+                    <li><strong>Teléfono:</strong> 01 546 7652</li>
+                    <li><strong>Celular:</strong> +51 657 972 231</li>
+                    <li><strong>Correo:</strong> <a href="">Carnes.y.Brasas@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="footerLinks">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="socialLinks">
+                <h3>Síguenos</h3>
+                <ul>
+                    <li><strong>Facebook:</strong> <a href="https://www.facebook.com/carnesybrasas/">Carnes.y.Brasas@hotmail.com</a></li>
+                    <li><strong>Instagram:</strong> <a href="https://www.instagram.com/carnes_y_brasas/">Carnes.y.Brasas@hotmail.com</a></li>
+                </ul>
+            </div>
+            <div class="contactInfo">
+                <h3>Registrate</h3>
+                <ul>
+                    <li><strong><a href="Registro.html">Registrate y ten descuentos especiales, presione aqui</a></strong></li>
+                </ul>
+            </div>
+        
+        </div>
+        <p>&copy; 2024 Carnes y Brasas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

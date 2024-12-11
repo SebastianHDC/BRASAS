@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnes y Brasas</title>
+    <link rel="stylesheet" href="css/estiloAcercade.css">
+    <link rel="shortcut icon" href="img/Carnes y Brasas.png" type="image/x-png">
+
+</head>
+
+<body>
+    <header>
+        <h1>Acerca de</h1>
+    </header>
+
+    <nav>
+        <a href="Home(Index).html">Inicio</a>
+        <a href="Registro.html">Registro</a>
+        <a href="Carta.html">Carta</a>
+        <a href="Reservación.html">Reservación</a>
+        <a href="Acerca de.html">Acerca de</a>
+        <a href="Galeria.html">Galeria</a>
+        <a href="Contactanos.html">Contáctanos</a>
+    </nav>
+
+    <center>
+        <section class="timeline">
+            <div class="timeline-content">
+                <div class="history-text">
+                    <h2 id="timeline-title">Nuestra Historia</h2>
+                    <p class="timeline-descripcion" id="timeline-description">En este año, nació nuestra visión de
+                        ofrecer las mejores carnes a la brasa
+                        en la ciudad y abrimos nuestro primer restaurante, convirtiendo nuestra pasión en un éxito
+                        local.</p>
+                </div>
+                <div class="timeline-image">
+                    <img id="timeline-image" src="img/Acerca de/Local 1.png" alt="Historia del restaurante">
+                </div>
+            </div>
+            <div class="timeline-dates">
+                <div class="date" onclick="updateTimeline('2002')">2002</div>
+                <div class="date" onclick="updateTimeline('2008')">2008</div>
+                <div class="date" onclick="updateTimeline('2014')">2014</div>
+                <div class="date" onclick="updateTimeline('2020')">2020</div>
+            </div>
+        </section>
+    </center>
+
+    <center>
+        <div class="contenedor-informacion">
+            <div class="informacion">
+                <div class="img-logo">
+                    <img src="img/Acerca de/Logos bebida.png" alt="">
+                </div>
+                <div class="info-adicional">
+                    <h3>
+                        +10 de Tipos de Bebidas
+                    </h3>
+                    <p>
+                        Una gran variedad de refrescos, vinos, cocteles, etc.
+                    </p>
+                </div>
+            </div>
+            <div class="informacion">
+                <div class="img-logo">
+                    <img src="img/Acerca de/Logos ingrediente.png" alt="">
+                </div>
+                <div class="info-adicional">
+                    <h3>
+                        Ingrendientes frescos
+                    </h3>
+                    <p>
+                        Tenemos los ingredientes mas frescos entre verduras, carnes y otros alimentos.
+                    </p>
+                </div>
+            </div>
+            <div class="informacion">
+                <div class="img-logo">
+                    <img src="img/Acerca de/Logos Atencion.png" alt="">
+                </div>
+                <div class="info-adicional">
+                    <h3>
+                        La mejor atención
+                    </h3>
+                    <p>
+                        Contamos con una excelente atención para nuestros clientes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    <main class="container">
+        <section class="content">
+            <div id="text-section">
+                <h2>Quiénes somos</h2>
+                <p>
+                    En Carnes y Brasas, nos destacamos por nuestra tradición culinaria y pasión por las brasas. Con más
+                    de 20 años de experiencia, ofrecemos platos únicos que celebran la excelencia de las carnes.
+                </p>
+                <p>
+                    Desde nuestros inicios en 2002, hemos mantenido un compromiso con la calidad y la innovación,
+                    ganándonos el reconocimiento de nuestros clientes.
+                </p>
+            </div>
+            <div id="image-section">
+                <img src="img/Acerca de/M 1.png" alt="Historia de Carnes y Brasas">
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <h3 class="colorBlack">20+ Años de Experiencia</h3>
+            <button class="boton" onclick="changeContent('somos')">Quiénes somos</button>
+            <br>
+            <br>
+            <button class="boton" onclick="changeContent('mision')">Nuestra misión</button>
+            <br>
+            <br>
+            <button class="boton" onclick="changeContent('objetivos')">Nuestros objetivos</button>
+            <br>
+            <br>
+            <button class="boton" onclick="changeContent('valores')">Nuestros valores</button>
+        </aside>
+    </main>
+
+
+    <footer>
+        <div class="footerContenedor">
+            <div class="contactInfo">
+                <h3>Contáctanos</h3>
+                <ul>
+                    <li><strong>Teléfono:</strong> 01 546 7652</li>
+                    <li><strong>Celular:</strong> +51 657 972 231</li>
+                    <li><strong>Correo:</strong> <a href="">Carnes.y.Brasas@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="footerLinks">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="socialLinks">
+                <h3>Síguenos</h3>
+                <ul>
+                    <li><strong>Facebook:</strong> <a
+                            href="https://www.facebook.com/carnesybrasas/">Carnes.y.Brasas@hotmail.com</a></li>
+                    <li><strong>Instagram:</strong> <a
+                            href="https://www.instagram.com/carnes_y_brasas/">Carnes.y.Brasas@hotmail.com</a></li>
+                </ul>
+            </div>
+            <div class="contactInfo">
+                <h3>Registrate</h3>
+                <ul>
+                    <li><strong><a href="Registro.html">Registrate y ten descuentos especiales, presione
+                                aqui</a></strong></li>
+                </ul>
+            </div>
+
+        </div>
+        <p>&copy; 2024 Carnes y Brasas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/Acerca de.js"></script>
+</body>
+
+</html>
